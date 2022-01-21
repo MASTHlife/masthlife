@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Home of the Mental Health StartUp MASTH LIFE
+
 <!--
 **MASTHlife/masthlife** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
