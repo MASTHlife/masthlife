@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/century-gothic');
-
 html,body{
     height: 100%;
 }
@@ -485,34 +483,21 @@ input[type=submit] {
 
 /*---------Banner area css ends--------------*/
 
-/*---------- Team area css starts---------------*/
+/*---------- About starts---------------*/
 
-.about{
-    background-color:#f1eae6 
-}
+.about-area{
+    background-image: url(../images/home/page2.png); /*--edit image--*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
 
-.about-text-left h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: #b89485;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.about-text-left h3 {
-    color: #b89485;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .about-text-left p{
     text-align: right;
     font-size: 13px;
-    color: #222;
+    color: #000;
     margin-bottom: 5px;
 }
 
@@ -534,49 +519,62 @@ input[type=submit] {
     margin-top: 30px;
 }
 
+.about-text-center {
+    margin-top: 30px;
+}
+
+.about-text-right {
+    margin-top: 30px;
+}
+
+
 .about-text-left p {
     text-align: right;
     font-size: 15px;
-    color: #222;
+    color: #000;
     margin-bottom: 5px;
 }
+
+.about-text-left h1, h2, h3 {
+	text-align: center;
+}
+
+.about-text-right h1, h2, h3 {
+	text-align: center;
+}
+
+.about-text-center h1, h2, h3 {
+	text-align: center;
+}
+
 .about-text-left img {
     float: center;
-    width:  240px;
-    height: 240px;
+    width:  150px;
+    height: 150px;
     background-size: cover;
     margin-top: 10px;
 }
+
+.about-text-center img {
+    float: center;
+    width:  150px;
+    height: 150px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
 .about-text-right img {
     float: center;
-    width:  240px;
-    height: 240px;
-    background-size: cover;
+    width:  150px;
+    height: 150px;
     margin-top: 10px;
-}
-
-.about-text-right h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: #b89485;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.about-text-right h3 {
-    color: #b89485;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    margin-bottom: 10px;
+    background-size: cover;
 }
 
 .about-text-right p{
     text-align: left;
     font-size: 13px;
-    color: #222;
+    color: #000;
     margin-bottom: 5px;
 }
 
@@ -594,27 +592,23 @@ input[type=submit] {
     text-decoration: none;
 }*/
 
-.about-text-right {
-    margin-top: 30px;
-}
-
 .about-text-right p {
     text-align: left;
     font-size: 15px;
-    color: #222;
+    color: #000;
     margin-bottom: 5px;
 }
 
 .about-text-team h2 {
     font-weight: 700;
     font-size: 25px;
-    color: #b89485;
+    color: #000;
     line-height: 1;
     text-align: center;
 }
 
 .about-text-team h3 {
-    color: #b89485;
+    color: #000;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -633,7 +627,7 @@ input[type=submit] {
 .about-text-team p{
     text-align: left;
     font-size: 13px;
-    color: #222;
+    color: #000;
     margin-bottom: 50px;
 }
 
@@ -647,7 +641,7 @@ input[type=submit] {
 .about-text-team p {
     text-align: left;
     font-size: 15px;
-    color: #222;
+    color: #000;
     margin-bottom: 50px;
 }
 
@@ -661,9 +655,26 @@ input[type=submit] {
 }
 
 
-/*Team Area Ends*/
+/*About Area Ends*/
 
-/*Colab starts*/
+/*Offerings starts*/
+
+.offer-area {
+    background-image: url(../images/home/page3.png); /*--edit image--*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+
+}
+
+
+.offer-area h2{
+    margin-top: 80px;
+    margin-right: 100px;
+    text-align: left;
+    float: left;
+}
 
 .colab p {
     margin-top: 100px;
