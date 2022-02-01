@@ -73,7 +73,7 @@
                                     <ul class="nav navbar-nav navbar-right">
 
                                         <li><a class="smooth-menu" href="#about">About</a></li>
-                                        <li><a class="smooth-menu" href="#team">Team</a></li>
+                                        <li><a class="smooth-menu" href="#about2">Offerings</a></li>
                                         
                                     </ul>
                                 </nav>
@@ -102,14 +102,33 @@
 			<br><br>
 			<h1> <span class="highlightme">Emotional Wellness. <br><br> For Students. </span> </h1>
 
-	                <h3><nobr>Helping students self-manage stress by blending AI-guided listening with professional expert support.</nobr></h3> 
+	                <h3><nobr>Helping students conquer their mental fitness by integrating AI-instructed coaching with professional guidance.</nobr></h3> 
 			<h3>Anonymous and Available 24/7 </h3> <br> <br>
 			
-			<form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdOfYTrUEfpu1DicfN9-mwTbltAyAHF-fufJXvUjh86fuMwkQ/formResponse" method="post">
-			<input type="text" name="entry.554964082" placeholder="School Name (with City)">
-			<input type="text" name="entry.434043763" placeholder="Email">
+			<form action="https://script.google.com/macros/s/AKfycbyScMZMqIfSEVY_082AdI_Dd3Df9XEnLuY1erxNWN0P6vrKTrAkGgkt5ngWEHh25eJK/exec" method="post" id="my-form">
+			<input type="text" name="school_name" placeholder="School Name (with City)">
+			<input type="text" name="email" placeholder="Email">
 			<input type="submit" value="Get Invite">
-			</form> <br>                      
+			</form> 
+	               <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+			<script id="rendered-js">
+				window.addEventListener("load", function() {
+				  const form = document.getElementById('my-form');
+				  form.addEventListener("submit", function(e) {
+				    e.preventDefault();
+				    const data = new FormData(form);
+				    const action = e.target.action;
+				    fetch(action, {
+				      method: 'POST',
+				      body: data,
+				    })
+				    .then(() => {
+				      alert("Success!");
+				    })
+				  });
+				});			 
+			</script> <br>                 
 
 				<h3> Launching Spring 2022 </h3>
                                 </section>
@@ -122,31 +141,86 @@
     </div>
 	<!--home ends--> 
 
-	<!--About Us -->
+	<!--About Starts-->
     <div class="about-area section-padding" id="about">
         <div class="container">
 
             <div class="row">
 	<div class="col-md-12">
                     <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
-	            <div class="colab"><p></p></div>
-                        <p class="line-one"></p>
-                        <h2>About Us</h2>
-                        <p class="line-one"></p>
+                        <h1>We hold your hand through MASTH</h1>
+
                     </div>
                 </div>
-                    <div class="about-text-colab">
-			<div style="text-align: center"><img src="images/portfolio/about.jpg"  class="rounded float-center" alt="about image" /></div>
-		    </div>
 
+                <div class="section-header wow fadeInDown" data-wow-delay="0.5s">
+                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                    <div class="about-text-left">
+                        <h2>Access to Therapy</h2>
+			<div style="text-align: center"><img src="images/icons/therapist.png"  class="rounded float-center" alt="about image" /></div>
+			<br>
+                        <h2>We believe every student deserves to be heard. We bring in access the best adoloscent therapists across the country.</h2>
 
-                    <div class="about-text-colab">
-
-                        <h2> Get Involved</h2> 
-                         
-                       <p> WE ARE MASTH. A small group of people trying to raise awareness and help combat dreadful mental illnesses, specifically in teens. </p>
-
+		</div> 
+                 
+		</div>
                 </div>
+                <div class="section-header wow fadeInDown" data-wow-delay="0.7s">
+                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                    <div class="about-text-center">
+                        <h2>AI Enabled Chatbot</h2>
+			<div style="text-align: center"><img src="images/icons/mastic.png"  class="rounded float-center" alt="about image" /></div>
+			<br>
+                        <h2>Our home trained AI, MASTI helps you through various stressors in your daily life and provide the right set of activities to improve your mental fitness.</h2>
+			 
+		</div>                  
+		</div>
+                </div>
+
+                <div class="section-header wow fadeInDown" data-wow-delay="0.9s">
+                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                    <div class="about-text-right">
+                        <h2>Personalized for you </h2>
+			<div style="text-align: center"><img src="images/icons/target.png"  class="rounded float-center" alt="about image" /></div>
+			<br>
+                        <h2>MASTH knows what is right for you. You will get a plan that will improve your productivity.</h2>
+		</div> 
+                </div>
+                </div>
+
+           </div>
+
+         </div>
+         </div>
+	<!--About Ends-->
+
+
+	<!--Offerings -->
+    <div class="offer-area section-padding" id="about2">
+        <div class="container">
+
+            <div class="row">
+	<div class="col-md-12">
+                    <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
+	            <div class="colab"><p></p></div>
+                        <h1>MASTH Offerings</h1>
+                    </div>
+                </div>
+			<ol>
+                        <div class="section-header wow fadeInDown" data-wow-delay="0.5s">
+			<h2><li>Emotional wellness assessments through AI-powered chatbot</li></h2>
+               		</div>
+                        <div class="section-header wow fadeInDown" data-wow-delay="0.7s">
+			<h2><li>Expert approved self help tasks and podcasts</li></h2>
+               		</div>
+                        <div class="section-header wow fadeInDown" data-wow-delay="0.9s">
+			<h2><li>Book appointments with therapists 24/7</li></h2>
+               		</div>
+                        <div class="section-header wow fadeInDown" data-wow-delay="1.1s">
+			<h2><li>128-bit encrypted Journalling space for all your thoughts</li></h2>
+               		</div>
+
+			</ol>
 
            </div>
 
@@ -154,87 +228,13 @@
          </div>
 
 
-	<!--About us Ends-->
+	<!--Offerings Ends-->
 
 
 
    
-<!--Team Starts-->
-    <div class="about-area section-padding" id="team">
-        <div class="container">
-
-            <div class="row">
-	<div class="col-md-12">
-                    <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
-                        <p class="line-one"></p>
-                        <h2>Co-Founders</h2>
-                        <p class="line-one"></p>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
-                    <div class="about-text-left">
-			<div style="text-align: center"><img src="images/team/yash.png"  class="rounded float-center" alt="about image" /></div>
-			<br>
-                        <h2> <a href="https://www.linkedin.com/in/lyakella/" target="_blank">Yashaswy Akella</a></h2> 
-                        <h3>Doctoral Candidate, Marketing, IIM Ahmedabad</h3>
-                        <h3>B.E. (Hons.) in Electrical Engineering, BITS Pilani.</h3>
-			 
-                 
-		</div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-		<div style="text-align: center"><img src="images/portfolio/white_square.png"  class="rounded float-center" alt="about image" /></div>
-                                    </div>
 
 
-                <div class="col-md-4 col-xs-12 col-sm-12 col-lg-4">
-                    <div class="about-text-right">
-			<div style="text-align: center"><img src="images/team/adi.png"  class="rounded float-center" alt="about image" /></div>
-			<br>
-                        <h2> <a href="https://www.linkedin.com/in/adityayadandla/" target="_blank">Aditya Yadandla</a></h2> 
-                        <h3>PGP, IIM Ahmedabad</h3>
-                        <h3>BTech in Electrical Engineering, IIT Hyderabad</h3>
-                    </div>
-                </div>
-
-           </div>
-
-         </div>
-         </div>
-	<!--Team Ends-->
-
-
-	<!--Sign up Starts-->
-    <div class="about-area section-padding" id="work">
-        <div class="container">
-
-            <div class="row">
-	<div class="col-md-12">
-                    <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
-                    </div>
-                </div>
-                    <div class="about-text-colab">
-			<div style="text-align: center"><img src="images/portfolio/hands.png"  class="rounded float-center" alt="about image" /></div>
-		    </div>
-
-
-                    <div class="about-text-colab">
-
-                        <h2>Get in touch</h2> 
-                         
-                       <p>If you belive this app would be useful in your place of study or work, fill out the below form. Join our fight to educate people about mental health and end the taboo around it.</p>
-			
-                </div>
-		<br>
-           </div>
-
-         </div>
-         </div>
-
-
-	<!--Sign up Ends-->
 
     <div class="footer-area">
         <div class="container">
